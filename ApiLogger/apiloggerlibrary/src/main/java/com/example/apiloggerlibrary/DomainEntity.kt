@@ -1,4 +1,4 @@
-package com.example.apilogger
+package com.example.apiloggerlibrary
 
 import com.google.gson.annotations.SerializedName
 

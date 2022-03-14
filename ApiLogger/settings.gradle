@@ -1,2 +1,3 @@
 rootProject.name = "ApiLogger"
 include ':app'
+include ':apiloggerlibrary'

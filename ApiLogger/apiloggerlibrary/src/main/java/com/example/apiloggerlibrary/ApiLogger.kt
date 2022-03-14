@@ -1,4 +1,4 @@
-package com.example.apilogger
+package com.example.apiloggerlibrary
 
 import android.util.Log
 import com.google.gson.Gson
@@ -7,8 +7,8 @@ import org.json.JSONObject
 class ApiLogger {
 
     private val gson = Gson()
-    fun printData(dataModel: DomainEntity<out Any>, isData: Boolean) {
-        dataModel.data.let {
+    fun printData(dataModel: DomainEntity<out Any>?, isData: Boolean) {
+        dataModel?.data?.let {
             val jsonObject = JSONObject(gson.toJson(dataModel))
             val dtoName = it.javaClass.name.split(".").toTypedArray()
             var logString = "Code : ${dataModel.code}\nMsg  : ${dataModel.message}\n" +
@@ -20,7 +20,7 @@ class ApiLogger {
             }
 
             Log.d("apiLogger",logString)
-        }
+        } ?: Log.d("apiLogger", "dataModel is null")
     }
 
     private val splitList = listOf( "\",\"", "},", "}", "{", "[", "]")
