@@ -33,12 +33,14 @@ android {
     }
 }
 
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            groupId = 'org.gradle.sample'
-            artifactId = 'library'
-            version = '1.1'
+afterEvaluate {
+    publishing {
+        publications {
+            library(MavenPublication) {
+                groupId = 'com.github.HeeGyeong'
+                artifactId = 'apiLogger'
+                version = '1.1'
+            }
         }
     }
 }
