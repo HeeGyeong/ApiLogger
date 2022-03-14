@@ -27,7 +27,6 @@ allprojects {
     group = 'com.github.HeeGyeong'
 }
 
-
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
