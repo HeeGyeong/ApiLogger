@@ -11,4 +11,4 @@ HttpLoggingInterceptor를 적용하기 전 간단한 Log 확인을 위해 작성
 ## Blog
 Jitpack을 사용한 Library 배포에 대한 설명은 다음 블로그에 작성해 두었습니다.
 
-[Tistory Blog - JitPack](https://heegs.tistory.com/87?category=922312, "Jitpack usage guide")
+[Tistory Blog - JitPack](https://heegs.tistory.com/87?category=922312 "Jitpack usage guide")
